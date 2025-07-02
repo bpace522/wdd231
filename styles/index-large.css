@@ -48,6 +48,10 @@
         padding: 15px;
         text-align: center;
     }
+
+    .navigation a:hover {
+        color: rgb(250, 250, 141);
+    }
 }
 
 @media screen and (max-width: 699px) {
@@ -63,6 +67,11 @@
     }
     nav {
         display: none;
+    }
+
+    nav a {
+        border-bottom: solid 1px #ccc;
+        text-align: center;
     }
 
     nav[open] {

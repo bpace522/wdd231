@@ -45,10 +45,6 @@ body {
     transition: color 0.3s;
 }
 
-.navigation a:hover {
-    color: rgb(250, 250, 141);
-}
-
 .res-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

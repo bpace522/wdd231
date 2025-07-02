@@ -51,6 +51,37 @@
 }
 
 @media screen and (max-width: 699px) {
+    .hamburger {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: white;
+        background-color: navy;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 7px;
+    }
+    nav {
+        display: none;
+    }
+
+    nav[open] {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .hamburger::before {
+        content: "☰";
+        cursor: pointer;
+    }
+
+    .hamburger[open]::before {
+        content: "❌";  
+    }
+
     .about-me,
     .student-photo {
         width: 90%;
@@ -66,5 +97,20 @@
     .student-photo img {
         max-width: 300px;
         padding-bottom: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .web-courses h2 {
+        text-align: center;
+        padding: 3rem;
+        background-color: navy;
+        color: white;
+        font-size: xx-large;
     }
 }

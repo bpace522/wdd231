@@ -49,6 +49,46 @@ body {
     color: rgb(250, 250, 141);
 }
 
+.res-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.res-grid section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.web-courses button {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #85ebff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    font-size: x-large;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.web-courses button:hover {
+    background-color: #046e83;
+    color: white;
+}
+
+.web-courses p {
+    text-align: center;
+    font-size: larger;
+}
+
 footer {
     background-color: navy;
     color: white;

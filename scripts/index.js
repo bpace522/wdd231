@@ -16,6 +16,15 @@ short.innerHTML = `Last Modification: <span class="highlight">${new Intl.DateTim
 
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
+const nav = document.querySelector('nav');
+const hamburger_button = document.querySelector(".hamburger");
+
+hamburger_button.addEventListener('click', () => {
+    nav.toggleAttribute("open");
+    hamburger_button.toggleAttribute("open");
+})
+
+
 const courses = [
     {
         subject: 'CSE',
@@ -101,9 +110,10 @@ createCourseCard(courses);
 const allCourses = document.querySelector("#allCourses");
 const wddCourses = document.querySelector("#wddCourses");
 const cseCourses = document.querySelector("#cseCourses");
+const credits = document.querySelector("#credits");
 
 allCourses.addEventListener("click", () => (
-    createCourseCard(courses.filter(courses))
+    createCourseCard(courses)
 ));
 
 wddCourses.addEventListener("click", () => (
@@ -116,10 +126,23 @@ cseCourses.addEventListener("click", () => (
 
 function createCourseCard(courses) {
     document.querySelector(".res-grid").innerHTML = "";
-    index.forEach(course => {
+
+    let totalCredits = 0;
+
+    courses.forEach(course => {
+        totalCredits += course.credits;
+
         let card = document.createElement("section");
         let name = document.createElement("h3");
+        let desc = document.createElement("p");
 
-        name.textContent
-    })
+        name.textContent = course.subject + course.number;
+        desc.textContent = course.description;
+
+        card.appendChild(name);
+
+        document.querySelector(".res-grid").appendChild(card);
+    });
+    
+    document.querySelector("#credits").textContent = totalCredits;
 }

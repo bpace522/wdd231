@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Sunshine Bakery",
+    "address": "123 Main St, Smalltown",
+    "phone": "555-123-4567",
+    "website": "https://sunshinebakery.com",
+    "image": "sunshine.jpg",
+    "membership": 3,
+    "description": "Family-owned bakery known for organic breads."
+  },
+  {
+    "name": "Tech Innovators",
+    "address": "456 Elm St, Bigcity",
+    "phone": "555-987-6543",
+    "website": "https://techinnovators.com",
+    "image": "tech.png",
+    "membership": 2,
+    "description": "Leading software company specializing in AI solutions."
+  },
+  {
+    "name": "Green Gardens",
+    "address": "789 Oak St, Villagetown",
+    "phone": "555-456-7890",
+    "website": "https://greengardens.com",
+    "image": "garden.jpg",
+    "membership": 1,
+    "description": "Garden center offering plants and landscaping services."
+  },
+  {
+    "name": "Mountain Outfitters",
+    "address": "321 Pine St, Hilltown",
+    "phone": "555-654-3210",
+    "website": "https://mountainoutfitters.com",
+    "image": "outfitters.png",
+    "membership": 3,
+    "description": "Outdoor gear shop with guided adventure tours."
+  },
+  {
+    "name": "Sparkle Cleaners",
+    "address": "654 Maple St, Cityplace",
+    "phone": "555-321-6540",
+    "website": "https://sparklecleaners.com",
+    "image": "cleaners.jpg",
+    "membership": 1,
+    "description": "Eco-friendly dry cleaning services."
+  },
+  {
+    "name": "Fit Life Gym",
+    "address": "147 Birch St, Metrocity",
+    "phone": "555-147-2580",
+    "website": "https://fitlifegym.com",
+    "image": "gym.jpg",
+    "membership": 2,
+    "description": "24/7 gym with personal trainers and classes."
+  },
+  {
+    "name": "The Book Nook",
+    "address": "258 Cedar St, Hamlet",
+    "phone": "555-258-3690",
+    "website": "https://thebooknook.com",
+    "image": "books.png",
+    "membership": 1,
+    "description": "Independent bookstore with local author events."
+  }
+]

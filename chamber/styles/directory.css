@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+}
+
+.header h1 {
+    align-self: left;
+    padding: 5rem;
+}
+
+.header nav {
+    margin-left: auto;
+    padding: 5rem;
+}
+
+.header img {
+    max-width: 100px;
+}
+
+.socials img {
+    max-width: 75px;
+}
+
+#members.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+#members.list {
+  display: block;
+}
+.member-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+}
+.member-card img {
+  width: 100%;
+  height: auto;
+}
+.member-card h2 {
+  margin: 0.5rem 0;
+}
+.view-buttons {
+  margin-bottom: 1rem;
+}
+
+.footer-div {
+    display: flex;
+    text-align: center;
+}
+
+.info,
+.socials,
+.student-info {
+    padding: 5rem;
+    margin: auto;
+}

@@ -16,6 +16,14 @@ short.innerHTML = `Last Modification: <span class="highlight">${new Intl.DateTim
 
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
+const nav = document.querySelector('nav');
+const hamburger_button = document.querySelector(".hamburger");
+
+hamburger_button.addEventListener('click', () => {
+    nav.toggleAttribute("open");
+    hamburger_button.toggleAttribute("open");
+})
+
 const membersContainer = document.getElementById("members");
 const gridButton = document.getElementById("grid-view");
 const listButton = document.getElementById("list-view");

@@ -4,7 +4,7 @@
     "address": "123 Main St, Smalltown",
     "phone": "555-123-4567",
     "website": "https://sunshinebakery.com",
-    "image": "sunshine.jpg",
+    "image": "neymar.webp",
     "membership": 3,
     "description": "Family-owned bakery known for organic breads."
   },
@@ -13,7 +13,7 @@
     "address": "456 Elm St, Bigcity",
     "phone": "555-987-6543",
     "website": "https://techinnovators.com",
-    "image": "tech.png",
+    "image": "neymar.webp",
     "membership": 2,
     "description": "Leading software company specializing in AI solutions."
   },
@@ -22,7 +22,7 @@
     "address": "789 Oak St, Villagetown",
     "phone": "555-456-7890",
     "website": "https://greengardens.com",
-    "image": "garden.jpg",
+    "image": "neymar.webp",
     "membership": 1,
     "description": "Garden center offering plants and landscaping services."
   },
@@ -31,7 +31,7 @@
     "address": "321 Pine St, Hilltown",
     "phone": "555-654-3210",
     "website": "https://mountainoutfitters.com",
-    "image": "outfitters.png",
+    "image": "neymar.webp",
     "membership": 3,
     "description": "Outdoor gear shop with guided adventure tours."
   },
@@ -40,7 +40,7 @@
     "address": "654 Maple St, Cityplace",
     "phone": "555-321-6540",
     "website": "https://sparklecleaners.com",
-    "image": "cleaners.jpg",
+    "image": "neymar.webp",
     "membership": 1,
     "description": "Eco-friendly dry cleaning services."
   },
@@ -49,7 +49,7 @@
     "address": "147 Birch St, Metrocity",
     "phone": "555-147-2580",
     "website": "https://fitlifegym.com",
-    "image": "gym.jpg",
+    "image": "neymar.webp",
     "membership": 2,
     "description": "24/7 gym with personal trainers and classes."
   },
@@ -58,7 +58,7 @@
     "address": "258 Cedar St, Hamlet",
     "phone": "555-258-3690",
     "website": "https://thebooknook.com",
-    "image": "books.png",
+    "image": "neymar.webp",
     "membership": 1,
     "description": "Independent bookstore with local author events."
   }

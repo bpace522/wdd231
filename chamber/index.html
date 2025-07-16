@@ -6,9 +6,9 @@
     <meta author="Bradley Pace">
     <title>Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/index.js" defer></script>
     <meta property="og:title" content="Chamber of Commerce Website for school"/>
     <meta property="og:description" content="This is a short description of my page for social media, and the picture is of Sao Paulo"/>
     <meta property="og:image" content="https://pbcruise.com/wpPB/wp-content/uploads/2022/09/AdobeStock_117931102-e1663722568145.jpg"/>
@@ -18,9 +18,9 @@
     <header>
         <div class="header">
             <img src="images/international-svgrepo-com.svg" alt="Generic Logo">
-            <h1>Directory of Sao Paulo, Brazil</h1>
+            <h1>Home Page of Sao Paulo, Brazil</h1>
             <nav>
-                <a href="index.html" id="home">Home</a>
+                <a href="directory.html" id="home">Directory</a>
                 <a href="#" id="discover">Discover</a>
                 <a href="#" id="join">Join</a>
             </nav>
@@ -28,12 +28,20 @@
         </div>
     </header>
     <main>
-        <h1>Member Directory</h1>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Sao Paulo</h1>
+                <p>Chamber of Commerce</p>
+                <button class="call-to-action">Join Now</button>
+            </div>
+        </div>
         <div class="view-buttons">
             <button id="grid-view">Grid View</button>
             <button id="list-view">List View</button>
         </div>
-        <section id="members" class="grid"></section>
+        <div id="weather"></div>
+        <h2>Spotlight Members</h2>
+        <div id="spotlights"></div>
     </main>
     <footer>
         <div class="footer-div">

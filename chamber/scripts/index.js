@@ -94,7 +94,7 @@ async function loadSpotlights() {
 
   spotlightsContainer.innerHTML = spotlights.map(member => `
     <div class="spotlight-card">
-      <img src="${member.logo}" alt="${member.name} logo">
+      <img src="images/${member.image}" alt="${member.name} logo">
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>Phone: ${member.phone}</p>

@@ -2,6 +2,13 @@
     .footer-div {
         display: flex;
         text-align: center;
+        flex-wrap: wrap;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .info,
@@ -16,12 +23,13 @@
     }
     
     .spotlight-card {
-        border: 1px solid #ccc;
-        padding: 1rem;
-        border-radius: 8px;
-        background: #fff;
-        text-align: center;
-        width: 20vem;
+        flex: 1 1 300px;
+        padding: 2rem;
+        background: #f0f4f8;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        color: #333;
     }
     .spotlight-card img {
         width: 15rem;
@@ -29,8 +37,71 @@
         border-radius: 8px;
     }
     .spotlight-card h2 {
-        margin: 0.5rem 0;
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+        color: #2c503c;
     }
+
+    .membership-level {
+        background: #ffffff;
+        border-left: 4px solid #34db58;
+        margin: 1rem 0;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 0.95rem;
+        font-weight: bolder;
+    }
+
+    #spotlights {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+/*     
+#weather {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f0f4f8;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+#weather h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c503c;
+}
+
+#weather p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+#weather h3 {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  color: #355e34;
+}
+
+#weather ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+#weather li {
+  background: #ffffff;
+  border-left: 4px solid #34db58;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+} */
 
 }
 
@@ -71,7 +142,7 @@
     }
 
     nav a {
-        border-bottom: solid 1px #ccc;
+        border-bottom: solid 1px #f0f4f8;
         text-align: center;
     }
 
@@ -94,12 +165,16 @@
         content: "❌";  
     }    
 
+    #spotlights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .spotlight-card {
-        border: 1px solid #ccc;
-        padding: 1rem;
-        border-radius: 8px;
-        background: #fff;
-        text-align: center;
+        width: 100%;
+        max-width: 500px;
     }
     .spotlight-card img {
         width: 15rem;
@@ -107,6 +182,18 @@
         border-radius: 8px;
     }
     .spotlight-card h2 {
-        margin: 0.5rem 0;
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+        color: #2c503c;
+    }
+
+    .membership-level {
+        background: #ffffff;
+        border-left: 4px solid #34db58;
+        margin: 1rem 0;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 0.95rem;
+        font-weight: bolder;
     }
 }

@@ -19,8 +19,21 @@ year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 const modal = document.getElementById('myModal');
 const closeModal = document.getElementById('closeModal');
 
-modal.showModal();
+document.getElementById("timestamp").value = new Date().toISOString();
 
-closeModal.addEventListener('click', () => {    
-    modal.close();
+document.querySelectorAll('[data-modal]').forEach(link => {
+    link.addEventListener('click', e => {
+    e.preventDefault();
+    const modalId = link.getAttribute('data-modal');
+    document.getElementById(modalId).showModal();
+    });
 });
+
+
+const nav = document.querySelector('nav');
+const hamburger_button = document.querySelector(".hamburger");
+
+hamburger_button.addEventListener('click', () => {
+    nav.toggleAttribute("open");
+    hamburger_button.toggleAttribute("open");
+})

@@ -1,4 +1,10 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 939px) {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
     .footer-div {
         display: flex;
         text-align: center;
@@ -32,9 +38,25 @@
         margin: 0.5rem 0;
     }
 
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    form {
+        flex: 2;
+    }
+
+    .membership-cards {
+        flex: 1;
+        margin-left: 2rem;
+        flex-direction: column;
+    }
+
+
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 938px) {
 
     *,
     *::before,

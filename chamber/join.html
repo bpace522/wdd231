@@ -13,23 +13,97 @@
     <header>
         <div class="header">
             <img src="images/international-svgrepo-com.svg" alt="Generic Logo">
-            <h1>Home Page of Sao Paulo, Brazil</h1>
+            <h1>Join the Chamber of Commerce</h1>
             <nav>
+                <a href="index.html" id="Home">Home</a>
                 <a href="directory.html" id="home">Directory</a>
                 <a href="#" id="discover">Discover</a>
-                <a href="#" id="join">Join</a>
             </nav>
             <button class="hamburger"></button>
         </div>
     </header>
     <main>
-        <dialog id="myModal">
-            <h2>Modal Dialog</h2>
-            <p>This is a modal dialog.</p>
-            <button id="closeModal">Close</button>
+    <h1>Apply for Membership</h1>
+    <form method="get" action="thankyou.html">
+        <label>
+            First Name:
+            <input type="text" name="firstName" title="Enter your first name" required autocomplete="given-name" />
+        </label>
+        <label>
+            Last Name:
+            <input type="text" name="lastName" title="Enter your last name" required autocomplete="family-name" />
+        </label>
+        <label>
+            Organizational Title:
+            <input type="text" name="orgTitle" title="Your position or title in the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+        </label>
+        <label>
+            Email:
+            <input type="email" name="email" title="Enter a valid email address" required autocomplete="email" placeholder="example@domain.com" />
+        </label>
+        <label>
+            Mobile Phone:
+            <input type="tel" name="phone" title="Enter your mobile phone number" required autocomplete="tel" />
+        </label>
+        <label>
+            Organization Name:
+            <input type="text" name="organization" title="Name of your business or organization" required autocomplete="organization" />
+        </label>
+        <label>
+            Membership Level:
+            <select name="membership" title="Select your membership level" required>
+            <option value="">--Select--</option>
+            <option value="np">NP Membership (Free)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+            </select>
+        </label>
+        <label>
+            Organization Description:
+            <textarea name="description" title="Describe your organization"></textarea>
+        </label>
+        <input type="hidden" name="timestamp" id="timestamp"/>
+        <input type="submit" value="Submit Application"/>
+    </form>
+        <section class="membership-cards">
+            <div class="card">
+                <h2>NP Membership</h2>
+                <a href="#" data-modal="modal-np">View Benefits</a>
+            </div>
+            <div class="card">
+                <h2>Bronze Membership</h2>
+                <a href="#" data-modal="modal-bronze">View Benefits</a>
+            </div>
+            <div class="card">
+                <h2>Silver Membership</h2>
+                <a href="#" data-modal="modal-silver">View Benefits</a>
+            </div>
+            <div class="card">
+                <h2>Gold Membership</h2>
+                <a href="#" data-modal="modal-gold">View Benefits</a>
+            </div>
+        </section>
+        <dialog id="modal-np">
+            <h3>NP Membership Benefits</h3>
+            <p>Free membership for nonprofits. Includes event access, newsletter, and basic training. $29.99</p>
+            <button onclick="document.getElementById('modal-np').close()">Close</button>
         </dialog>
-
-
+        <dialog id="modal-bronze">
+            <h3>Bronze Membership Benefits</h3>
+            <p>Includes NP benefits plus spotlight ads and exclusive webinars. $40</p>
+            <button onclick="document.getElementById('modal-bronze').close()">Close</button>
+        </dialog>
+        <dialog id="modal-silver">
+            <h3>Silver Membership Benefits</h3>
+            <p>Includes all Bronze benefits, training courses, and a featured home page listing. $500,000</p>
+            <button onclick="document.getElementById('modal-silver').close()">Close</button>
+        </dialog>
+        <dialog id="modal-gold">
+            <h3>Gold Membership Benefits</h3>
+            <p>All Silver benefits + premium advertising, VIP events, and major event discounts. $1,000,000</p>
+            <button onclick="document.getElementById('modal-gold').close()">Close</button>
+        </dialog>
     </main>
     <footer>
         <div class="footer-div">

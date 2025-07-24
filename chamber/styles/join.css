@@ -3,6 +3,7 @@ html, body {
   background-color: #f2f2f2;
   padding: 0;
   overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -138,4 +139,82 @@ main h1 {
 
 footer {
   font-size: large;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main h1 {
+  align-self: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+  width: 25em;
+  height: 3em;
+  font-size: large;
+  cursor: pointer;
+  margin: 3px;
+  margin-top: 1rem;
+  background-color: #52ab98;
+  color: #f2f2f2;
+  padding: 4px;
+  border-radius: 6px;
+  align-self: center;
+}
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+
+.card {
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card a {
+    margin-top: 0.5rem;
+    display: inline-block;
+    color: #0077cc;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -1,0 +1,112 @@
+@media screen and (min-width: 700px) {
+    .footer-div {
+        display: flex;
+        text-align: center;
+    }
+
+    .info,
+    .socials,
+    .student-info {
+        padding: 5rem;
+        margin: auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    .spotlight-card {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 8px;
+        background: #fff;
+        text-align: center;
+        width: 20vem;
+    }
+    .spotlight-card img {
+        width: 15rem;
+        height: auto;
+        border-radius: 8px;
+    }
+    .spotlight-card h2 {
+        margin: 0.5rem 0;
+    }
+
+}
+
+@media screen and (max-width: 699px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    .footer-div {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .info,
+    .socials,
+    .student-info {
+        padding: 1rem;
+        margin: auto;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: white;
+        background-color: navy;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 7px;
+        margin-bottom: 3rem;
+    }
+    nav {
+        display: none;
+    }
+
+    nav a {
+        border-bottom: solid 1px #ccc;
+        text-align: center;
+    }
+
+    nav[open] {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        padding: 5px;
+        padding-top: 20px;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .hamburger::before {
+        content: "☰";
+        cursor: pointer;
+    }
+
+    .hamburger[open]::before {
+        content: "❌";  
+    }    
+
+    .spotlight-card {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 8px;
+        background: #fff;
+        text-align: center;
+    }
+    .spotlight-card img {
+        width: 15rem;
+        height: auto;
+        border-radius: 8px;
+    }
+    .spotlight-card h2 {
+        margin: 0.5rem 0;
+    }
+}

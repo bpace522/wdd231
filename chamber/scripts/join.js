@@ -37,3 +37,20 @@ hamburger_button.addEventListener('click', () => {
     nav.toggleAttribute("open");
     hamburger_button.toggleAttribute("open");
 })
+
+// var path = window.location.href.split("=").pop();
+
+// var liContainer = document.getElementById("navMenu");
+// const navAnchor = liContainer.getElementsByClassName('mainMenu');
+
+// for (var i = 0; i < navAnchor.length; i++) {  
+//   var liAnchor = navAnchor[i].getElementsByTagName("a");
+//   for (var j = 0; j < liAnchor.length; j++) {
+//     linkPath = liAnchor[j].getAttribute("href").split("=").pop();
+//     if (linkPath === path) {
+//       var current = document.getElementsByClassName("active");
+//       current[0].className = current[0].className.replace(" active", "");
+//       navAnchor[i].className += " active";
+//     } 
+//   }
+// }

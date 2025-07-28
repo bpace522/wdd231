@@ -69,4 +69,3 @@ const clearDataBtn = document.querySelector('.clear');
 clearDataBtn.addEventListener("click", () => (
     cleardata()
 ));
-

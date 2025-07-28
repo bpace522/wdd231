@@ -24,6 +24,27 @@ hamburger_button.addEventListener('click', () => {
     hamburger_button.toggleAttribute("open");
 })
 
+const messageElement = document.getElementById("visit-message");
+const lastVisit = localStorage.getItem("lastVisitDate");
+const now = new Date();
+
+if (!lastVisit) {
+    messageElement.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const lastVisitDate = new Date(lastVisit);
+    const diffTime = now - lastVisitDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+    if (diffTime < 1000 * 60 * 60 * 24) {
+    messageElement.textContent = "Back so soon! Awesome!";
+    } else {
+    const dayText = diffDays === 1 ? "day" : "days";
+    messageElement.textContent = `You last visited ${diffDays} ${dayText} ago.`;
+    }
+}
+
+localStorage.setItem("lastVisitDate", now.toISOString());
+
 
 const locationCard = document.getElementById("location-card");
 

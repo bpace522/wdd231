@@ -1,4 +1,4 @@
-@media screen and (min-width: 939px) {
+@media screen and (min-width: 1025px) {
     *,
     *::before,
     *::after {
@@ -52,11 +52,26 @@
         margin-left: 2rem;
         flex-direction: column;
     }
-
-
+    
+    #location-card {
+        display: grid;
+        grid-template-areas: "card1 card2 card3";
+        gap: 1rem;
+    }
 }
 
-@media screen and (max-width: 938px) {
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    #location-card {
+    display: grid;
+    grid-template-areas:
+        "card1 card2"
+        "card3 card3";
+    gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
 
     *,
     *::before,
@@ -130,5 +145,14 @@
     }
     .spotlight-card h2 {
         margin: 0.5rem 0;
+    }
+
+    #location-card {
+        display: grid;
+        grid-template-areas: 
+        "card1" 
+        "card2" 
+        "card3";
+        gap: 1rem;
     }
 }

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Parque Ibirapuera",
+    "address": "Av. Pedro Álvares Cabral, São Paulo - SP, 04094-050",
+    "description": "One of the largest urban parks in Brazil, featuring museums, lakes, and jogging paths.",
+    "image": "neymar.webp"
+  },
+  {
+    "name": "Museu de Arte de São Paulo (MASP)",
+    "address": "Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200",
+    "description": "Iconic modern art museum with a suspended design and a vast collection of Western art.",
+    "image": "neymar.webp"
+  },
+  {
+    "name": "Catedral da Sé",
+    "address": "Praça da Sé - Sé, São Paulo - SP, 01001-000",
+    "description": "A neo-Gothic cathedral located in the heart of São Paulo’s historic downtown.",
+    "image": "beach.webp"
+  },
+  {
+    "name": "Mercadão de São Paulo",
+    "address": "R. Cantareira, 306 - Centro Histórico de São Paulo, São Paulo - SP, 01024-000",
+    "description": "Famous public market known for exotic fruits, spices, and the iconic mortadella sandwich.",
+    "image": "sao_paulo.webp"
+  },
+  {
+    "name": "Avenida Paulista",
+    "address": "Avenida Paulista, São Paulo - SP",
+    "description": "São Paulo’s financial and cultural artery, filled with museums, shopping, and street performers.",
+    "image": "neymar.webp"
+  },
+  {
+    "name": "Beco do Batman",
+    "address": "R. Gonçalo Afonso - Vila Madalena, São Paulo - SP, 05436-100",
+    "description": "An open-air gallery of graffiti and street art tucked into the bohemian Vila Madalena district.",
+    "image": "beach.webp"
+  },
+  {
+    "name": "Museu do Ipiranga",
+    "address": "Parque da Independência, Ipiranga, São Paulo - SP, 04263-000",
+    "description": "Historic museum near where Brazil declared independence, recently restored and reopened.",
+    "image": "sao_paulo.webp"
+  },
+  {
+    "name": "Edifício Martinelli",
+    "address": "R. São Bento, 405 - Centro Histórico de São Paulo, São Paulo - SP, 01011-100",
+    "description": "São Paulo’s first skyscraper, offering rooftop views of the city and rich architectural history.",
+    "image": "neymar.webp"
+  }
+]

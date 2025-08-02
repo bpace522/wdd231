@@ -78,7 +78,7 @@ main h1 {
 }
 
 .location img {
-  max-width: 300px;
+  max-width: 250px;
   border-radius: 8px;
 }
 
@@ -129,4 +129,21 @@ main h1 {
 
 h2 {
   text-align: center;
+}
+
+.location button {
+  width: 10em;
+  height: 3em;
+  font-size: large;
+  cursor: pointer;
+  margin: 3px;
+  background-color: #52ab98;
+  color: #f2f2f2;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.location button:hover {
+  cursor: pointer;
+  background-color: #2b6777;
 }

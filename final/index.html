@@ -4,15 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <title>WCA Competitions</title>
-  <script src="scripts/fetch.js" defer></script>
+  <script src="scripts/index.js" defer></script>
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
   <header>
-
+    <div class="header">
+      <div class="icon">
+        <img src="images/rubiks_cube_15542.ico" alt="rubiks_cube_15542">
+      </div>
+      <h1>Home Page</h1>
+      <div class="search">
+        <a href="search.html">⌕</a>
+      </div>
+    </div>
   </header>
   <main>
-    <h1>Competitions in 2008</h1>
+    <h1>Welcome! These are the current 3x3 World Rankings!</h1>
+    <p>This site contains WCA Record Data thanks to Robin Elbrecht and his API, https://wca-rest-api.robiningelbrecht.be</p>
     <div class="dropdown">
       <button class="dropbtn">Dropdown</button>
       <button class="clear">Clear Data</button>
@@ -24,7 +33,7 @@
     </div>
     <div id="output"></div>
   </main>
-  <footer> 
+  <footer>
 
   </footer>
 </body>

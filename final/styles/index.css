@@ -1,10 +1,24 @@
+html, body {
+  margin: 0;
+  background-color: white;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Dropdown Button */
 .dropbtn {
+  display: none;
   background-color: #04AA6D;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
+}
+
+.clear {
+  display: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -39,3 +53,59 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+main li{
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  border-top: 2px solid black;
+}
+
+main li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+main li:nth-child(even) {
+  background-color: #ffffff;
+}
+
+
+main {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  background-color: #3e8e41;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header h1 {
+  color: white;
+  font-size: 300%;
+}
+
+.header a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 75px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: #888888;
+  border-radius: 15px;
+}
+
+.header a:hover {
+  cursor: pointer;
+  background-color: #494949;
+}
+
+.search {
+  font-size: 500%;
+  padding-right: 3rem;
+}

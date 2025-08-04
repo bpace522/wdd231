@@ -61,6 +61,7 @@ main ul {
 main li{
   display: flex;
   padding: 1rem;
+  justify-content: center;
   gap: 1rem;
   border-top: 2px solid black;
 }

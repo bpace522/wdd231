@@ -54,6 +54,10 @@ html, body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+main ul {
+  padding: 0;
+}
+
 main li{
   display: flex;
   padding: 1rem;

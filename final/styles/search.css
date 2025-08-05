@@ -1,0 +1,133 @@
+html, body {
+  margin: 0;
+  background-color: white;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 8px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 8px 15px;
+    background-color: #3e8e41;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-results-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-results-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.search-results-list a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.search-results-list a:hover {
+    text-decoration: underline;
+}
+
+.loading-indicator {
+    display: none;
+    color: #777;
+    font-style: italic;
+}
+
+.error-message {
+    display: none;
+    color: #e74c3c;
+    padding: 10px;
+    background-color: #fadbd8;
+    border-left: 4px solid #e74c3c;
+    margin-bottom: 15px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #3e8e41;
+    text-decoration: none;
+    padding-top: 2rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  background-color: #3e8e41;
+  padding: 1rem;
+}
+
+.header h1 {
+  color: white;
+  font-size: 300%;
+}

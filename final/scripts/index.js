@@ -23,9 +23,9 @@ const eventNames = {
 };
 
 
-async function fetchData() {
+async function fetchData(event) {
     try {
-        const response = await fetch('https://raw.githubusercontent.com/robiningelbrecht/wca-rest-api/master/api/rank/world/single/333.json');
+        const response = await fetch(`https://raw.githubusercontent.com/robiningelbrecht/wca-rest-api/master/api/rank/world/single/${event}.json`);
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -45,7 +45,7 @@ async function fetchData() {
             const li = document.createElement('li');
             li.innerHTML = `
                 <strong>${person.rank?.world ?? 'N/A'}</strong>
-                <a href="person.html?id=${person.personId}"><strong>${name}</strong></a><br>
+                <a href="search.html?id=${person.personId}"><strong>${name}</strong></a><br>
                 <strong>Event:</strong> ${eventNames[person.eventId] || person.eventId}<br>
                 <strong>Best Single:</strong> ${(person.best / 100).toFixed(2)} seconds<br>
                 <strong>World Rank:</strong> ${person.rank?.world ?? 'N/A'}
@@ -79,7 +79,7 @@ async function fetchPersonName(personId) {
 
 
 function cleardata() {
-    document.getElementById('output').textContent = 'Cleared.';
+    document.getElementById('output').textContent = '';
     return;
 }
 
@@ -88,14 +88,29 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
     event.preventDefault();
 
     switch (this.textContent.trim()) {
-      case 'Link 1':
-        console.log("You clicked LInk 1");
+      case '2x2':
+        cleardata();
+        fetchData(222);
         break;
-      case 'Link 2':
-        console.log('You clicked Link 2');
+      case '3x3':
+        cleardata();
+        fetchData(333);
         break;
-      case 'Link 3':
-        console.log('You clicked Link 3');
+      case '4x4':
+        cleardata();
+        fetchData(444);
+        break;
+      case '5x5':
+        cleardata();
+        fetchData(555);
+        break;
+      case '6x6':
+        cleardata();
+        fetchData(666);
+        break;
+      case '7x7':
+        cleardata();
+        fetchData(777);
         break;
     }
   });
@@ -107,4 +122,4 @@ clearDataBtn.addEventListener("click", () => (
     cleardata()
 ));
 
-fetchData();
+fetchData(333);

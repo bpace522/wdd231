@@ -81,6 +81,7 @@ main {
 .header {
   display: flex;
   background-color: #3e8e41;
+  align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
@@ -88,13 +89,17 @@ main {
 .header h1 {
   color: white;
   font-size: 300%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
 }
 
 .header a {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  line-height: 75px;
+  width: 120px;
+  height: 30px;
+  line-height: 25px;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -107,9 +112,4 @@ main {
 .header a:hover {
   cursor: pointer;
   background-color: #494949;
-}
-
-.search {
-  font-size: 500%;
-  padding-right: 3rem;
 }

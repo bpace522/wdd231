@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  background-color: white;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  background-color: #3e8e41;
+  padding: 1rem;
+}
+
+.header h1 {
+  color: white;
+  font-size: 300%;
+}

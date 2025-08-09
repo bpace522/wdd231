@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WCA Competitor Search</title>
   <link rel="stylesheet" href="styles/search.css">
+  <link rel="stylesheet" href="styles/search-large.css">
   <link rel="icon" href="images/rubiks_cube_15542.ico">
   <meta name="description" content="This is where the Results for individual competitors is stored.">
   <meta name="author" content="Your Name">
   <meta property="og:title" content="Search Results for WCA Comptetitors">
   <meta property="og:description" content="On this page is where the results of the specified competitor are displayed">
   <meta property="og:image" content="path/to/image.jpg">
+  <script src="scripts/search.js"></script>
 </head>
 <header>
 <div class="header">
@@ -21,8 +23,8 @@
     <nav>
         <a href="about.html">About</a>
         <a href="index.html">Home</a>
-        <a href="details.html">Details</a>
     </nav>
+    <button class="hamburger"></button>
 </div>
 </header>
 <body>
@@ -31,6 +33,13 @@
     
     <h2>WCA Competitor Search</h2>
     
+    <p>If you would like to search for a specific competitor, you will need to structure the WCA ID as follows: 2009ZEMD01</p>
+    <ul>
+      <p>• The year they started competing: (ex. 2009)</p>
+      <p>• The first 4 letters of their last name (ex. ZEMD)</p>
+      <p>• The last 2 digits of the year they were born (ex. 01)</p>
+    </ul>
+
     <div id="error-message" class="error-message"></div>
     
     <div id="search-container">
@@ -89,7 +98,15 @@
       </table>
     </div>
   </div>
-  
-  <script src="scripts/search.js"></script>
+  <footer class="site-footer">
+      <div class="footer-links">
+          <a href="attributions.html">Attributions</a>
+          <a href="https://youtu.be/CbmJgvi19b4?si=mj8eR05OS1uT8OuM">Video Link</a>
+      </div>
+      <div class="footer-info">
+          <p>© 2025 Created by Bradley Pace</p>
+          <p>Unofficial WCA Information Page – Not affiliated with the World Cube Association.</p>
+      </div>
+  </footer>
 </body>
 </html>

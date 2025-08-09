@@ -5,17 +5,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us and Contact Us Page</title>
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/about-large.css">
+    <link rel="icon" href="images/rubiks_cube_15542.ico">
+    <meta name="description" content="This is where the Results for individual competitors is stored.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Search Results for WCA Comptetitors">
+    <meta property="og:description" content="On this page is where the results of the specified competitor are displayed">
+    <meta property="og:image" content="path/to/image.jpg">
 </head>
 <body>
     <header>
         <div class="header">
             <div class="icon">
-                <img src="images/rubiks_cube_15542.ico" alt="rubiks_cube_15542">
+                <img src="images/rubiks_cube_15542.ico" loading="lazy" alt="rubiks_cube_15542">
             </div>
-            <h1>About Us</h1>
+            <h1>About Us & Contact Us</h1>
+            <nav>
+                <a href="search.html">Search</a>
+                <a href="index.html">Home</a>
+            </nav>
+            <button class="hamburger"></button>
         </div>
     </header>
+    <main>
+        <p><strong>Welcome to [Your Site Name] — a fan-made hub for all things related to the World Cube Association (WCA) and the amazing world of speedcubing!</strong></p>
+<p>We’re not affiliated with the official WCA, but we share their passion for the puzzle community. Our goal is to provide cubers of all levels with easy-to-access information, competition details, records, and fun facts from the speedcubing world.
+Whether you’re here to track the latest results, learn more about your favorite cubers, or just explore the history of the cube, you’re in the right place.</p>
+<p>We started this site because we love the creativity, skill, and community spirit that speedcubing inspires. Think of this as your friendly neighborhood cube resource — made by cubers, for cubers.</p>
+        <div class="content">
+            <div class="content-img">
+                <img src="images/competition.webp" alt="rubiks_cube_15542">
+            </div>
+            <div class="form-card">
+                <form method="get" action="details.html">
+
+                    <label for="review">Written Review:</label>
+                    <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+                    <label for="username">Your Name:</label>
+                    <input type="text" id="username" name="username">
+
+                    <label for="installDate">Date of Submission:</label>
+                    <input type="date" id="installDate" name="installDate" required>
+
+                    <input class="submit_button" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+<footer class="site-footer">
+      <div class="footer-links">
+          <a href="attributions.html">Attributions</a>
+          <a href="https://youtu.be/CbmJgvi19b4?si=mj8eR05OS1uT8OuM">Video Link</a>
+      </div>
+      <div class="footer-info">
+          <p>© 2025 Created by Bradley Pace</p>
+          <p>Unofficial WCA Information Page – Not affiliated with the World Cube Association.</p>
+      </div>
+</footer>
 </body>
 </html>

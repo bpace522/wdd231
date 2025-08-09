@@ -1,13 +1,59 @@
-<!-- I literally made this page like 5 minutes ago and I forgot what I made it for so maybe it'll come back to me, but if that doesn't happen it can be the form completed page i guess -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Submission Details</title>
+    <link rel="stylesheet" href="styles/details.css">
+    <script src="scripts/details.js" defer></script>
+    <link rel="icon" href="images/rubiks_cube_15542.ico">
+    <meta name="description" content="This is where the Results for individual competitors is stored.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Search Results for WCA Comptetitors">
+    <meta property="og:description" content="On this page is where the results of the specified competitor are displayed">
+    <meta property="og:image" content="path/to/image.jpg">
 </head>
+<header>
+<div class="header">
+    <div class="icon">
+        <img src="images/rubiks_cube_15542.ico" alt="rubiks_cube_15542">
+    </div>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+    </nav>
+</div>
+</header>
 <body>
-    
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <h2>Thanks for Submitting!</h2>
+            <p><strong>Your Review:</strong> <span id="reviewText"></span></p>
+            <p><strong>Your Name:</strong> <span id="userName"></span></p>
+            <p><strong>Date Submitted:</strong> <span id="submissionDate"></span></p>
+
+            <hr style="margin: 1rem 0;">
+            <p>
+                The World Cube Association (WCA) tracks official competition results through 
+                their central database. Every solve is recorded by a delegate at the event, 
+                verified for accuracy, and then uploaded to the WCA website. This ensures 
+                records, averages, and rankings are kept up-to-date for cubers worldwide.
+            </p>
+            <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <h1>Thank you for your Submission!</h1>
+    <a href="index.html" class="back-link">← Back to Rankings</a>
+<footer class="site-footer">
+      <div class="footer-links">
+          <a href="attributions.html">Attributions</a>
+          <a href="https://youtu.be/CbmJgvi19b4?si=mj8eR05OS1uT8OuM">Video Link</a>
+      </div>
+      <div class="footer-info">
+          <p>© 2025 Created by Bradley Pace</p>
+          <p>Unofficial WCA Information Page – Not affiliated with the World Cube Association.</p>
+      </div>
+</footer>
 </body>
 </html>

@@ -105,11 +105,36 @@ main {
   text-decoration: none;
   font-weight: bolder;
   cursor: pointer;
-  background-color: #888888;
+  background-color: #494949;
   border-radius: 15px;
 }
 
 .header a:hover {
   cursor: pointer;
-  background-color: #494949;
+  background-color: #131313;
+}
+
+.site-footer {
+    background-color: #3e8e41;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* keeps it responsive */
+    padding: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-info {
+    font-size: 0.9rem;
+    text-align: right;
 }

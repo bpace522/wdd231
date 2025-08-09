@@ -39,7 +39,7 @@ async function fetchData(event) {
 
         const ul = document.createElement('ul');
 
-        for (const person of data.items.slice(0, 50)) { // limit to top 50 for performance
+        for (const person of data.items.slice(0, 25)) {
             const name = await fetchPersonName(person.personId);
 
             const li = document.createElement('li');

@@ -7,6 +7,11 @@
   <script src="scripts/index.js" defer></script>
   <link rel="stylesheet" href="styles/index.css">
   <link rel="icon" href="images/rubiks_cube_15542.ico">
+  <meta name="description" content="This is where the Results for individual competitors is stored.">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Search Results for WCA Comptetitors">
+  <meta property="og:description" content="On this page is where the results of the specified competitor are displayed">
+  <meta property="og:image" content="path/to/image.jpg">
 </head>
 <body>
   <header>
@@ -18,12 +23,11 @@
       <nav>
         <a href="search.html">Search</a>
         <a href="about.html">About Page</a>
-        <a href="attributions.html">Attributions</a>
       </nav>
     </div>
   </header>
   <main>
-    <h1>Welcome! These are the current 3x3 World Rankings!</h1>
+    <h1>Welcome! These are the current World Rankings!</h1>
     <p>This site contains WCA Record Data thanks to Robin Elbrecht and his API, https://wca-rest-api.robiningelbrecht.be</p>
     <div class="dropdown">
       <button class="dropbtn">Choose Event to Display</button>
@@ -39,8 +43,15 @@
     </div>
     <div id="output"></div>
   </main>
-  <footer>
-
+  <footer class="site-footer">
+      <div class="footer-links">
+          <a href="attributions.html">Attributions</a>
+          <a href="https://youtu.be/CbmJgvi19b4?si=mj8eR05OS1uT8OuM">Video Link</a>
+      </div>
+      <div class="footer-info">
+          <p>© 2025 Created by Bradley Pace</p>
+          <p>Unofficial WCA Information Page – Not affiliated with the World Cube Association.</p>
+      </div>
   </footer>
 </body>
 </html>

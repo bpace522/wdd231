@@ -1,9 +1,26 @@
 @media screen and (max-width: 1499px) {
 
+    .header h1 {
+        font-size: 150%;
+        text-align: center;
+        color: white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        align-self: center;
+    }
+
     .hamburger {
         position: absolute;
-        top: 5px;
+        align-self: center;
         right: 5px;
+        background-color: #2c3e50;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        font-size: 150%;
     }
 
     nav {
@@ -13,11 +30,13 @@
     nav[open] {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 30px;
     justify-content: space-around;
-    gap: 0rem;
+    gap: 1rem;
     background-color: #333;
-    padding: 0.75rem 0;
+    border-radius: 20px;
+    position: absolute;
+    right: 60px;
     }
     
     .hamburger::before {
@@ -37,8 +56,41 @@
     }
     
     nav a:hover {
-        color: rgb(250, 250, 141);
-        border-bottom: 2px solid rgb(250, 250, 141);
+        color: #3e8e41;
+        border-bottom: 2px solid #3e8e41;
+    }
+
+    .header {
+    display: flex;
+    background-color: #3e8e41;
+    justify-content: space-between;
+    padding: 1rem;
+    }
+
+    .site-footer {
+        background-color: #3e8e41;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; /* keeps it responsive */
+        padding: 1rem;
+    }
+
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-info {
+        font-size: 0.9rem;
+        text-align: right;
     }
 
     .form-card {
@@ -113,32 +165,6 @@
         width: 80%;
         height: auto;
         display: inline-block;
-    }
-
-    
-    .footer-links a {
-        color: white;
-        text-decoration: none;
-        margin-right: 1rem;
-    }
-
-    .footer-links a:hover {
-        text-decoration: underline;
-    }
-
-    .footer-info {
-        font-size: 0.9rem;
-        text-align: right;
-    }
-    
-    .site-footer {
-        background-color: #3e8e41;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 1rem;
     }
 }
 
